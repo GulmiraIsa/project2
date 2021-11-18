@@ -1,0 +1,311 @@
+/*Variables*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --black: #000;
+  --white: #fff;
+}
+
+.dark-mode {
+  --black: #fff;
+  --white: #000;
+}
+
+/*Mixins*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.yellow {
+  color: #D1E077;
+}
+
+.blue {
+  color: #268695;
+}
+
+.green {
+  color: #265A35;
+}
+
+.primary {
+  color: #BB7F44;
+}
+
+.secondary {
+  color: #954B5A;
+}
+
+.bg_yellow {
+  background-color: #D1E077;
+}
+
+.bg_blue {
+  background-color: #268695;
+}
+
+.bg_green {
+  background-color: #265A35;
+}
+
+.bg_primary {
+  background-color: #BB7F44;
+}
+
+.bg_secondary {
+  background-color: #954B5A;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/*==========BUTTONS START==========*/
+/*==========BUTTONS END==========*/
+/*==========HEADER START==========*/
+header {
+  display: flex;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+header figure img {
+  width: 120px;
+}
+
+header h3 {
+  font-size: 21px;
+  margin-left: 20px;
+}
+
+/*==========HEADER END==========*/
+.footer {
+  height: 20vh;
+  width: 100%;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.7), -2px -2px 2px rgba(255, 255, 255, 0.1);
+  background-color: #ccc9c9;
+  font-size: 20px;
+  font-weight: bold;
+  place-items: center;
+}
+
+.footer ul {
+  display: flex;
+  margin: 0 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer ul li {
+  height: 50px;
+  width: 50px;
+  display: grid;
+  place-items: center;
+  margin: 20px 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5), -1px -1px 5px rgba(255, 255, 255, 0.1), inset 6px 6px 10px rgba(0, 0, 0, 0.9), inset -3px -3px 10px rgba(255, 255, 255, 0.1);
+}
+
+.footer ul li a {
+  color: #19347c;
+}
+
+.footer ul .active {
+  background-color: #19347c;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6), -1px -1px 2px rgba(255, 255, 255, 0.1);
+}
+
+.footer ul .active a {
+  color: white;
+}
+
+/*==========MAIN START==========*/
+main .user {
+  width: 60%;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px;
+  display: flex;
+  border: 1px solid #D5D5D5;
+  border-radius: 10px;
+  background-color: #D5D5D5;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+main .user figure img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+main .user_description {
+  align-items: center;
+  margin-top: 30px;
+}
+
+main .user_description_value {
+  margin-left: 10px;
+  padding: 12px;
+}
+
+main .user_description_value .key {
+  font-size: 28px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+main .user_description_value .value {
+  font-size: 25px;
+  padding: 10px;
+}
+
+main .icons {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  background-color: #F3F3F3;
+  border-bottom: 3px solid #D5D5D5;
+}
+
+main .icons .fgr {
+  width: 25%;
+  padding: 50px;
+  text-align: center;
+  border-right: 3px solid #D5D5D5;
+}
+
+main .icons .fgr img {
+  font-size: 40px;
+  padding: 15px;
+}
+
+main .icons .fgr figcaption {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main .buttons {
+  width: 100%;
+  display: flex;
+}
+
+main .buttons .btn_taketest {
+  text-align: center;
+  width: 20%;
+  padding: 15px;
+  font-size: 22px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+main .buttons .btn_taketest:hover {
+  opacity: 0.8;
+}
+
+/*==========MAIN END==========*/
+.exam_parts {
+  background-color: #eedbdb5d;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 2px;
+}
+
+.exam_parts .exam {
+  height: 65vh;
+}
+
+.exam_parts .exam .first, .exam_parts .exam .second, .exam_parts .exam .third, .exam_parts .exam .fourth {
+  height: 100vh;
+  font-size: 22px;
+  padding: 20px;
+}
+
+.exam_parts .exam .first {
+  text-align: center;
+}
+
+.exam_parts .exam .second {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exam_parts .exam .second .part_second-right figure {
+  display: flex;
+  flex-direction: column;
+}
+
+.exam_parts .exam .second .part_second-right figure img {
+  width: 130px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.exam_parts .exam .second .part_second-right .stop {
+  width: 130px;
+  height: 130px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.exam_parts .exam .second .part_second-right .stop-icon {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+}
+
+.microphone {
+  background-color: #EEEEEE;
+  height: 85vh;
+}
+
+.microphone_desc {
+  text-align: center;
+  padding: 40px;
+}
+
+.microphone_desc h5 {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.microphone_desc p {
+  font-size: 20px;
+}
+
+.microphone figure {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.microphone figure img {
+  cursor: pointer;
+}
+
+.microphone .mic_btn {
+  text-align: center;
+}
+
+.microphone .mic_btn .btn_start_check {
+  font-size: 16px;
+  padding: 8px 30px;
+  background-color: #D9534F;
+  color: white;
+  margin-top: 20px;
+  border-radius: 5px;
+}

@@ -1,0 +1,36 @@
+.microphone{
+    background-color: #EEEEEE;
+    height: 85vh;
+
+    &_desc{
+      text-align: center;
+      padding: 40px;
+
+       h5{
+           font-size: 20px;
+           padding: 10px;
+       }
+       p{
+           font-size: 20px;
+       }
+    }
+    figure{
+        text-align: center;
+        margin: 20px auto;
+        img{
+            cursor: pointer;
+        }
+    }
+
+    .mic_btn{
+        text-align: center;
+        .btn_start_check{
+            font-size: 16px;
+            padding: 8px 30px;
+            background-color: #D9534F;
+            color: white;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    }
+}

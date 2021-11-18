@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--============================ META TAGS START ============================-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="description" content="Creating Responsive Web Sites " />
+    <meta name="keywords" content="HTML, CSS, Responsive Templates" />
+    <meta name="author" content="Abdullayeva Ofeliya" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--============================ META TAGS END ==============================-->
+
+    <!--============================ CSS START ==================================-->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <!--============================ CSS END ====================================-->
+
+    <!--============================ FAVICON ICON START =========================-->
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+    <!--============================ FAVICON ICON END ===========================-->
+
+    <!--============================ FONT AWESOME 5.15.3 START ====================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!--============================ FONT AWESOME 5.15.3 END     ======================-->
+
+    <title>Pilot imtahan modeli</title>
+    
+    
+
+
+</head>
+
+<body>
+    <!--=========================================================================-->
+    <!--============================= HEADER START ==============================-->
+    <!--=========================================================================-->
+    <header>
+      
+        <figure>
+            <img src="./assets/images/logo.png" alt="logo">
+        </figure>
+        <div class="description">
+            <h3>Azərbaycan Respublikasının</h3>
+            <h3>Dövlət imtahan mərkəzi</h3>
+        </div>
+
+    </header>
+    <!--=========================================================================-->
+    <!--============================= HEADER END ================================-->
+    <!--=========================================================================-->
+
+    <!--=========================================================================-->
+    <!--============================= MAIN START ================================-->
+    <!--=========================================================================-->
+    <main>
+        <!--=========================================================================-->
+        <!--============================= Promotion START ===========================-->
+        <!--=========================================================================-->
+        
+        <section class="microphone">
+            <div class="microphone_desc">
+                <h5>Before we get started, let's test your microphone.</h5>
+                <p>It's important to make sure we can hear you clearly so we can mark your response.</p>
+            </div>
+
+
+            <figure>
+                <img src="./assets/images/icon_mic.png" alt="microphone">
+            </figure>
+
+            <div class="mic_btn">
+                <button id="recordButton" class="btn_start_check btn-danger">Start Check</button>
+                <button id="nextButton"  class="btn_start_check btn-danger" >Növbəti</button>
+               <!--<a href="#" class="btn_start_check btn-danger">Start Check</a>--> 
+            </div>
+
+            <ol id="recordingsList"></ol>
+        </section>
+
+        <!--=========================================================================-->
+        <!--============================= Promotion END =============================-->
+        <!--=========================================================================-->
+    </main>
+ <!-- ============================ JAVASCRIPT START ==========================-->
+ <script src="assets/scripts/main.js"></script>
+ <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <script>
+        var recordButton = document.getElementById("recordButton");
+        recordButton.addEventListener("click", startRecording);
+        var nextButton = document.getElementById("nextButton");
+        nextButton.addEventListener("click",next);
+    </script>
+
+   
+    <!-- ============================ JAVASCRIPT END ============================-->
+
+
+    <!--=========================================================================-->
+    <!--============================= MAIN END ==================================-->
+    <!--=========================================================================-->
+
+    <!--=========================================================================-->
+    <!--============================= FOOTER START ==============================-->
+    <!--=========================================================================-->
+ 
+    <!--=========================================================================-->
+    <!--============================= FOOTER END ================================-->
+    <!--=========================================================================-->
+
+   
+</body>
+
+</html>

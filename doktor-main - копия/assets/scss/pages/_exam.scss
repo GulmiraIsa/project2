@@ -1,0 +1,57 @@
+
+.exam_parts{
+    background-color: #eedbdb5d;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 2px;
+    .exam{
+        height: 65vh;
+
+        .first,.second,.third,.fourth{
+            height: 100vh;
+            font-size: 22px;
+            padding: 20px ;
+            // display: none;
+        }
+
+        .first{
+            text-align: center;
+        }
+
+        .second{
+            display: flex;
+            justify-content: space-between;
+
+            .part_second-right{
+                figure{
+                    display: flex;
+                    flex-direction: column;
+                    img{
+                        width: 130px;
+                        background: transparent;
+                        border-radius: 50%;
+                    }
+                }
+
+                .stop{
+                    width: 130px;
+                    height: 130px;
+                    background-color: #f1f1f1;
+                    border-radius: 50%;
+                    margin-top: 20px;
+                    &-icon{
+                        width: 40px;
+                        height: 40px;
+                        background-color: blue;
+                    }
+                }
+            }
+        }
+
+        
+        
+       
+    }
+}
+
+
+

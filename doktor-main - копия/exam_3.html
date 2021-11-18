@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--============================ META TAGS START ============================-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="description" content="Creating Responsive Web Sites " />
+    <meta name="keywords" content="HTML, CSS, Responsive Templates" />
+    <meta name="author" content="Abdullayeva Ofeliya" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--============================ META TAGS END ==============================-->
+
+    <!--============================ CSS START ==================================-->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <!--============================ CSS END ====================================-->
+
+
+    <!--============================ SWIPER START ==================================-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!--============================ SWIPER END ==================================-->
+
+    <!--============================ FAVICON ICON START =========================-->
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+    <!--============================ FAVICON ICON END ===========================-->
+
+    <!--============================ FONT AWESOME 5.15.3 START ====================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!--============================ FONT AWESOME 5.15.3 END     ======================-->
+
+    <script src="assets/scripts/main.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <style>
+         .button {
+        width: 130px;
+        height: 130px;
+        outline-style:initial;
+        border-radius: 100px;
+        border: 3px solid black;
+        cursor: pointer;
+      }
+    </style>
+
+    
+
+
+
+
+    
+
+
+
+    <title>Pilot imtahan modeli</title>
+
+</head>
+
+<body>
+    <!--=========================================================================-->
+    <!--============================= HEADER START ==============================-->
+    <!--=========================================================================-->
+    <header>
+
+        <figure>
+            <img src="./assets/images/logo.png" alt="logo">
+        </figure>
+        <div class="description">
+            <h3>Azərbaycan Respublikasının</h3>
+            <h3>Dövlət imtahan mərkəzi</h3>
+        </div>
+
+    </header>
+    <!--=========================================================================-->
+    <!--============================= HEADER END ================================-->
+    <!--=========================================================================-->
+
+    <!--=========================================================================-->
+    <!--============================= MAIN START ================================-->
+    <!--=========================================================================-->
+    <main>
+        <div class="exam_parts">
+            <div class="exam container">
+                
+                <section id="three" class="third content">
+                    <div class="part_second-left">
+                        <figure>
+                            <img src="./assets/images/pic1.png" alt="">
+                            <figcaption>Which of these homes is more common in your town/city? Why?</figcaption>
+                        </figure>
+        
+                        
+                    </div>
+                    <div class="part_second-right">
+                        <figure>
+                            <img src="./assets/images/icon_mic.png" alt="">
+                           <!--<a class="stop" href="#"><span class="stop-icon"></span></a>-->
+                           
+                           <img src="./assets/images/st-record.png" id="getImage" onclick="getConfirmation()"/>
+                        
+                        </BR>
+                           <p id='demo'></p>
+                          
+                          <!--  <button type="button" class="button">
+                            <span class="button__text"></span>
+                            <span class="button__icon"><ion-icon name="stop-circle-outline" style="font-size:100 px;"></ion-icon>
+                            </span>
+                               </button>-->
+                            
+                        </figure>
+                    </div>
+                    <ol id="recordingsList"></ol>
+                    <div class="mic_btn">
+                        <button id="nextButton4"  class="btn_start_check btn-danger" >>>/button>
+                </div>
+                </section>
+        
+               
+              
+        
+            </div>
+        </div>
+        
+    
+
+    </main>
+
+    <!--=========================================================================-->
+    <!--============================= MAIN END ==================================-->
+    <!--=========================================================================-->
+
+    <!--=========================================================================-->
+    <!--============================= FOOTER START ==============================-->
+    <!--=========================================================================-->
+    <footer>
+        <div class="footer">
+            <ul>
+                <li class="active" id="1"><a href="#">1</a></li>
+                <li><a href="#" id="2">2</a></li>
+                <li><a href="#" id="3">3</a></li>
+                <li><a href="#" id="4">4</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!--=========================================================================-->
+    <!--============================= FOOTER END ================================-->
+    <!--=========================================================================-->
+
+    <!-- ============================ JAVASCRIPT START ==========================-->
+   
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <script>
+      
+        var nextButton3 = document.getElementById("nextButton2");
+        nextButton3.addEventListener("click",next2);
+    </script>
+    <script type="text/javascript">
+
+	
+
+        //var deadline = new Date("2021-11-16 17:06:00").getTime();
+        
+        var deadline = new Date().getTime() + 1*12000 ;
+        
+        
+            var x = setInterval(function () {
+                    
+        var now = new Date().getTime();		
+        var t = deadline - now;
+                    
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+                
+        var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                
+        var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+                
+        var seconds = Math.floor((t % (1000 * 60)) / 1000);
+        
+                
+        document.getElementById("demo").innerHTML ="<span style='color:green;font-family:Arial;'>"+ (minutes<10?'0'+minutes:minutes)+":" +
+        (seconds<10?'0'+seconds:seconds)+"</span>";
+        
+        //document.getElementById("demo").innerHTML ="<span style='color:green;font-weight:bold;font-family:Arial;'>"+ (hours<10?'0'+hours:hours)+":"+ (minutes<10?'0'+minutes:minutes)+"</span>";
+                
+        if (t < 0) 
+        {
+        
+        clearInterval(x);
+        startRecording();
+        start();
+        
+        
+            
+        }
+        
+            }, 1000); 
+        
+        
+         function start(){
+             var deadline = new Date().getTime() + 2*11000 ;
+        
+        
+            var x = setInterval(function () {
+                    
+        var now = new Date().getTime();		
+        var t = deadline - now;
+                    
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+                
+        var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                
+        var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+                
+        var seconds = Math.floor((t % (1000 * 60)) / 1000);
+        
+                
+        document.getElementById("demo").innerHTML ="<span style='color:red;font-family:Arial;'>Vaxt başladı:"+ (minutes<10?'0'+minutes:minutes)+":" +
+        (seconds<10?'0'+seconds:seconds)+"</span>";
+        
+        //document.getElementById("demo").innerHTML ="<span style='color:green;font-weight:bold;font-family:Arial;'>"+ (hours<10?'0'+hours:hours)+":"+ (minutes<10?'0'+minutes:minutes)+"</span>";
+                
+        if (t < 0) 
+        {
+        
+        clearInterval(x);
+        stopRecording();
+        //download();
+        document.getElementById("demo").innerHTML = "<span style='color:red;font-family:Arial;'>Vaxt bitdi</center></span>";     
+        
+        }
+        
+            }, 1000); 
+        
+         }
+        
+        
+        </script>
+<script type = "text/javascript">
+   
+       function getConfirmation() {
+          var retVal = confirm("Səs yazısını dayandırmaq istəyirsiniz?");
+          if( retVal == true ) {
+            // document.write ("User wants to continue!");
+             return true;
+          } else {
+            // document.write ("User does not want to continue!");
+             return false;
+          }
+       }
+    //-->
+ </script>     
+    <!-- ============================ JAVASCRIPT END ============================-->
+</body>
+
+</html>
